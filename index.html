@@ -58,6 +58,7 @@ function speedVid(){
 aud1.playbackRate= modifier;
 aud2.playbackRate=modifier;
 aud1.play();
+track();
 }
 function pauseVid() { 
   aud1.pause();
@@ -85,6 +86,7 @@ src2  = document.createElement("source");
 src2.src  = a;
 aud2.appendChild(src2);
 setTimeout(play, change);
+track();
 }
 </script> 
 
