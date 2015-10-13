@@ -8,6 +8,10 @@
 #buton:hover{
 	background-color:pink;
 }
+#colorswap:hover{
+background-color:black;
+color:white;
+}
 </style>
 <body> 
 Current Time: <font color = "#CD2626"><span id = "counter"> </span></font>
@@ -29,7 +33,7 @@ TO MAKE THIS WORK: You must download the zip, and place your mp3 file into it, a
   
   
 <br><br>
-<i><b>If you're up to it... Setup multiple audio files</b></i>
+<i><b><h4 id="colorswap">If you're up to it... Setup multiple audio files</h4></b></i>
 <script> 
 
 
@@ -58,7 +62,7 @@ function speedVid(){
 aud1.playbackRate= modifier;
 aud2.playbackRate=modifier;
 aud1.play();
-track();
+setInterval(track, 200);
 }
 function pauseVid() { 
   aud1.pause();
@@ -86,7 +90,7 @@ src2  = document.createElement("source");
 src2.src  = a;
 aud2.appendChild(src2);
 setTimeout(play, change);
-track();
+setInterval(track, 200);
 }
 </script> 
 
